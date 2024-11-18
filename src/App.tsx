@@ -1,6 +1,7 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { lazy, Suspense, useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import TextPage from "./pages/TextPage";
+import TitleUpdater from "./components/TitleUpdater";
 
 const Home = lazy(() => import("./pages/Home"));
 const AboutMe = lazy(() => import("./pages/AboutMe"));
@@ -11,6 +12,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 function App() {
   return (
     <BrowserRouter>
+      <TitleUpdater />
       <div className="flex min-h-screen bg-slate-800 text-white p-10">
         <Suspense>
           <Routes>
