@@ -11,8 +11,8 @@ const Contact = lazy(() => import("./pages/Contact"));
 function App() {
   return (
     <BrowserRouter>
-      <div className="flex h-screen bg-slate-800 text-white">
-        <Suspense fallback={<TextPage text="Loading..." />}>
+      <div className="flex min-h-screen bg-slate-800 text-white p-10">
+        <Suspense>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-me" element={<AboutMe />} />
