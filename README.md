@@ -18,3 +18,4 @@
 - Build the app: `npm run build`
 - Login to amplify: `amplify configure`
   - Region: `us-east-1`
+- Deploy: `amplify publish`

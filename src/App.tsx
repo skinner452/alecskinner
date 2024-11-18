@@ -1,14 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Welcome to alecskinner.com</p>
-      </header>
+    <div
+      style={{
+        margin: 20,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <h1>Welcome to alecskinner.com</h1>
+      <h2>Projects coming soon!</h2>
     </div>
   );
 }
