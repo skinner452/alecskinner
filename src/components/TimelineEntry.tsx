@@ -13,7 +13,7 @@ type Props = {
 
 const TimelineEntry = (props: Props) => {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 items-center">
+    <div className="flex flex-col-reverse sm:flex-row gap-4 items-center">
       <div className="flex flex-col gap-2">
         <Link
           className="text-3xl font-bold text-center tracking-tight sm:text-left"
