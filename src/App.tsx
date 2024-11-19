@@ -1,7 +1,8 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import TextPage from "./pages/TextPage";
 import TitleUpdater from "./components/TitleUpdater";
+import BackButton from "./components/BackButton";
 
 const Home = lazy(() => import("./pages/Home"));
 const AboutMe = lazy(() => import("./pages/AboutMe"));
@@ -13,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <TitleUpdater />
-      <div className="flex min-h-screen bg-slate-800 text-white p-10">
+      <div className="flex flex-col gap-10 min-h-screen bg-slate-800 text-white p-10">
         <Suspense>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,6 +25,7 @@ function App() {
             <Route path="*" element={<TextPage text="Not Found" />} />
           </Routes>
         </Suspense>
+        <BackButton />
       </div>
     </BrowserRouter>
   );

@@ -7,7 +7,6 @@ import GoImage from "../images/go.png";
 import DjangoImage from "../images/django.png";
 import MySQLImage from "../images/mysql.png";
 
-import { Link } from "react-router-dom";
 import TimelineEntry from "../components/TimelineEntry";
 import TopSkill from "../components/TopSkill";
 
@@ -143,10 +142,6 @@ const AboutMe = () => {
           url={"https://connectrn.com/"}
         />
       </div>
-
-      <Link to={"/"} className="text-center text-3xl">
-        &larr; Back
-      </Link>
     </div>
   );
 };
