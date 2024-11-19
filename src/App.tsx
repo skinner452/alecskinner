@@ -1,5 +1,5 @@
-import React, { lazy, Suspense, useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TextPage from "./pages/TextPage";
 import TitleUpdater from "./components/TitleUpdater";
 

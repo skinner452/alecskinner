@@ -6,7 +6,7 @@ const Home = () => {
     <div className="container max-w-4xl m-auto sm:grid sm:grid-cols-3 sm:gap-10">
       <div className="col-span-2 my-auto">
         <h2 className="text-5xl sm:text-7xl font-semibold text-white tracking-tight">
-          Hi, I'm Alec Skinner
+          Hi, I'm Alec
         </h2>
 
         <p className="mt-8 text-lg/7 sm:text-xl/8 font-medium text-gray-300">
@@ -18,7 +18,7 @@ const Home = () => {
 
         <div className="mt-10 mb-10 sm:mb-0 flex flex-col sm:flex-row gap-y-4 gap-x-10 text-4xl sm:text-base/7 font-semibold">
           <Link to={"/about-me"}>
-            About me <span aria-hidden="true">&rarr;</span>
+            About Me <span aria-hidden="true">&rarr;</span>
           </Link>
           <Link to={"/my-projects"}>
             My Projects <span aria-hidden="true">&rarr;</span>
