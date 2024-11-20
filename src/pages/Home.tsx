@@ -3,7 +3,7 @@ import MaineImage from "../images/maine.jpg";
 
 const Home = () => {
   return (
-    <div className="container max-w-4xl m-auto sm:grid sm:grid-cols-3 sm:gap-10">
+    <div className="max-w-4xl m-auto sm:grid sm:grid-cols-3 sm:gap-10">
       <div className="col-span-2 my-auto">
         <h2 className="text-5xl sm:text-7xl font-semibold text-white tracking-tight">
           Hi, I'm Alec

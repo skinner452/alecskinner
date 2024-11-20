@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="container m-auto max-w-4xl text-center flex flex-col gap-4">
+    <div className="m-auto max-w-4xl text-center flex flex-col gap-4">
       {/* Header */}
       <div className="flex flex-col gap-2">
         <p className="text-7xl font-bold">Contact</p>

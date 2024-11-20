@@ -23,8 +23,6 @@ const TitleUpdater = () => {
       title += ` | ${prettyPathName}`;
     }
 
-    console.log(title);
-
     // Set the document title
     document.title = title;
   }, [location]);

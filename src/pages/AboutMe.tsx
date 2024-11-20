@@ -12,7 +12,7 @@ import TopSkill from "../components/TopSkill";
 
 const AboutMe = () => {
   return (
-    <div className="container max-w-5xl m-auto flex flex-col gap-20">
+    <div className="flex flex-col gap-20">
       <div className="flex flex-col gap-10">
         <p className="text-5xl text-center font-bold">About Me</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
