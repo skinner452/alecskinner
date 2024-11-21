@@ -1,5 +1,24 @@
 import { useCallback, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+
+const NAV_LINKS = [
+  {
+    url: "/about-me",
+    title: "About Me",
+  },
+  {
+    url: "/my-projects",
+    title: "My Projects",
+  },
+  {
+    url: "/resources",
+    title: "Resources",
+  },
+  {
+    url: "/contact",
+    title: "Contact",
+  },
+];
 
 const Navbar = () => {
   const location = useLocation();
@@ -30,37 +49,34 @@ const Navbar = () => {
         </button>
 
         <div className="hidden gap-8 font-extralight text-center py-5 sm:flex">
-          {[
-            {
-              url: "/about-me",
-              title: "About Me",
-            },
-            {
-              url: "/my-projects",
-              title: "My Projects",
-            },
-            {
-              url: "/resources",
-              title: "Resources",
-            },
-            {
-              url: "/contact",
-              title: "Contact",
-            },
-          ].map((link) => (
-            <Link key={link.url} to={link.url} onClick={closeMenu}>
+          {NAV_LINKS.map((link) => (
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }
+              key={link.url}
+              to={link.url}
+            >
               {link.title}
-            </Link>
+            </NavLink>
           ))}
         </div>
       </div>
 
       {isMenuOpen && (
         <div className="flex flex-col gap-8 font-extralight text-center py-5 sm:hidden">
-          <Link to="/about-me">About Me</Link>
-          <Link to="/my-projects">My Projects</Link>
-          <Link to="/resources">Resources</Link>
-          <Link to="/contact">Contact</Link>
+          {NAV_LINKS.map((link) => (
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4" : ""
+              }
+              key={link.url}
+              to={link.url}
+              onClick={closeMenu}
+            >
+              {link.title}
+            </NavLink>
+          ))}
         </div>
       )}
     </nav>

@@ -16,7 +16,7 @@ function App() {
       {/* Automatically updates the tab title based on the route name */}
       <TitleUpdater />
 
-      <div className="flex flex-col min-h-screen bg-slate-800 text-white">
+      <div className="flex flex-col min-h-screen">
         <Navbar />
 
         <div className="p-10 flex-grow flex">
