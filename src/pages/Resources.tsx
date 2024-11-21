@@ -7,7 +7,7 @@ const Resources = () => {
     <div className="flex flex-col gap-20 w-full">
       <p className="text-5xl text-center font-bold">Resources</p>
 
-      <div className="flex gap-20 justify-center max-h-12">
+      <div className="flex flex-col sm:flex-row gap-20 justify-center">
         <ResourceItem title="Resume" image={ResumeImage} link={"/Resume.pdf"} />
         <ResourceItem
           title="GitHub"

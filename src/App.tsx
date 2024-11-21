@@ -1,14 +1,14 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import TextPage from "./pages/TextPage";
 import TitleUpdater from "./components/TitleUpdater";
 import Navbar from "./components/Navbar";
 
 const Home = lazy(() => import("./pages/Home"));
 const AboutMe = lazy(() => import("./pages/AboutMe"));
-const MyProjects = lazy(() => import("./pages/MyProjects"));
+const Projects = lazy(() => import("./pages/Projects"));
 const Resources = lazy(() => import("./pages/Resources"));
 const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-me" element={<AboutMe />} />
-                <Route path="/my-projects" element={<MyProjects />} />
+                <Route path="/my-projects" element={<Projects />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<TextPage text="Not Found" />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
           </div>

@@ -13,7 +13,7 @@ const ResourceItem = (props: Props) => {
       to={props.link}
       target="_blank"
     >
-      <img src={props.image} alt="Resume" className="h-48" />
+      <img src={props.image} alt="Resume" className="w-48 h-48" />
       <p className="text-center text-3xl font-extralight">{props.title}</p>
     </Link>
   );

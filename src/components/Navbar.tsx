@@ -1,24 +1,6 @@
 import { useCallback, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-
-const NAV_LINKS = [
-  {
-    url: "/about-me",
-    title: "About Me",
-  },
-  {
-    url: "/my-projects",
-    title: "My Projects",
-  },
-  {
-    url: "/resources",
-    title: "Resources",
-  },
-  {
-    url: "/contact",
-    title: "Contact",
-  },
-];
+import { NAV_ITEMS } from "../constants/navigation";
 
 const Navbar = () => {
   const location = useLocation();
@@ -49,15 +31,15 @@ const Navbar = () => {
         </button>
 
         <div className="hidden gap-8 font-extralight text-center py-5 sm:flex">
-          {NAV_LINKS.map((link) => (
+          {NAV_ITEMS.map((item) => (
             <NavLink
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-4" : ""
               }
-              key={link.url}
-              to={link.url}
+              key={item.url}
+              to={item.url}
             >
-              {link.title}
+              {item.title}
             </NavLink>
           ))}
         </div>
@@ -65,7 +47,7 @@ const Navbar = () => {
 
       {isMenuOpen && (
         <div className="flex flex-col gap-8 font-extralight text-center py-5 sm:hidden">
-          {NAV_LINKS.map((link) => (
+          {NAV_ITEMS.map((link) => (
             <NavLink
               className={({ isActive }) =>
                 isActive ? "underline underline-offset-4" : ""
@@ -81,23 +63,6 @@ const Navbar = () => {
       )}
     </nav>
   );
-
-  // return (
-  //   <nav className="bg-slate-900 px-10">
-  //     <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between">
-  //       <Link to="/" className="font-semibold py-5">
-  //         Alec Skinner
-  //       </Link>
-
-  //       <div className="flex flex-col sm:flex-row gap-8 font-extralight text-center py-5">
-  //         <Link to="/about-me">About Me</Link>
-  //         <Link to="/my-projects">My Projects</Link>
-  //         <Link to="/resources">Resources</Link>
-  //         <Link to="/contact">Contact</Link>
-  //       </div>
-  //     </div>
-  //   </nav>
-  // );
 };
 
 export default Navbar;

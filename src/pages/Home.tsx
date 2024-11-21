@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import MaineImage from "../images/maine.jpg";
+import { NAV_ITEMS } from "../constants/navigation";
 
 const Home = () => {
   return (
@@ -17,18 +18,11 @@ const Home = () => {
         </p>
 
         <div className="mt-10 mb-10 sm:mb-0 flex flex-col sm:flex-row gap-y-4 gap-x-10 text-4xl sm:text-base/7 font-semibold">
-          <Link to={"/about-me"}>
-            About Me <span aria-hidden="true">&rarr;</span>
-          </Link>
-          <Link to={"/my-projects"}>
-            My Projects <span aria-hidden="true">&rarr;</span>
-          </Link>
-          <Link to={"/resources"}>
-            Resources <span aria-hidden="true">&rarr;</span>
-          </Link>
-          <Link to={"/contact"}>
-            Contact <span aria-hidden="true">&rarr;</span>
-          </Link>
+          {NAV_ITEMS.map((item) => (
+            <Link to={item.url}>
+              {item.title} <span aria-hidden="true">&rarr;</span>
+            </Link>
+          ))}
         </div>
       </div>
 
