@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="m-auto max-w-4xl text-center flex flex-col gap-4">
+    <div className="w-full text-center flex flex-col gap-10">
       {/* Header */}
       <div className="flex flex-col gap-2">
-        <p className="text-7xl font-bold">Contact</p>
+        <p className="text-5xl font-bold">Contact</p>
         <p className="font-extralight">
           Feel free to contact me with any of the below methods, hope to chat
           soon!

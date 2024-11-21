@@ -1,4 +1,4 @@
-import ReactImage from "../images/react.png";
+import CodeImage from "../images/code.png";
 
 import ProjectItem from "../components/ProjectItem";
 
@@ -11,8 +11,16 @@ const Projects = () => {
           title="alecskinner.com"
           description="Personal website built with React and Tailwind CSS"
           tags={["React", "Typescript", "Tailwind CSS"]}
-          image={ReactImage}
+          image={CodeImage}
           link="/"
+        />
+
+        <ProjectItem
+          title="LastFM Stats for Tidbyt"
+          description="App built for Tidbyt that displays a user's listening stats from LastFM"
+          tags={["Starlark"]}
+          image={CodeImage}
+          link="https://github.com/skinner452/community/tree/main/apps/lastfmstats"
         />
       </div>
     </div>
