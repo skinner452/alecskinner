@@ -3,4 +3,5 @@ export const TAG_COLORS: Record<string, string> = {
   Typescript: "bg-green-200",
   "Tailwind CSS": "bg-purple-200",
   Starlark: "bg-orange-200",
+  AWS: "bg-yellow-200",
 };

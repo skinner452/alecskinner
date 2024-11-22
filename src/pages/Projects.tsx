@@ -10,7 +10,7 @@ const Projects = () => {
         <ProjectItem
           title="alecskinner.com"
           description="Personal website built with React and Tailwind CSS"
-          tags={["React", "Typescript", "Tailwind CSS"]}
+          tags={["React", "Typescript", "Tailwind CSS", "AWS"]}
           image={CodeImage}
           link="https://github.com/skinner452/alecskinner"
         />
