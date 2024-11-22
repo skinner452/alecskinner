@@ -57,12 +57,15 @@ const AboutMe = () => {
           <p>HTML</p>
           <p>CSS</p>
           <p>Node</p>
+          <p>Next.js</p>
           <p>Python</p>
           <p>PHP</p>
           <p>Laravel</p>
           <p>Java</p>
           <p>PostgreSQL</p>
           <p>MongoDB</p>
+          <p>AWS</p>
+          <p>Git</p>
         </div>
       </div>
 
