@@ -16,10 +16,10 @@ const TimelineEntry = (props: Props) => {
     <div className="flex flex-col-reverse sm:flex-row gap-4 items-center">
       <div className="flex flex-col gap-2">
         <Link
-          className="text-3xl font-bold text-center tracking-tight sm:text-left"
-          style={{ color: props.color }}
           to={props.url}
           target="_blank"
+          className="text-3xl font-bold text-center tracking-tight sm:text-left"
+          style={{ color: props.color }}
         >
           {props.title}
         </Link>
@@ -28,11 +28,14 @@ const TimelineEntry = (props: Props) => {
         </p>
         <div className="text-base/7">{props.description}</div>
       </div>
-      <img
-        className="opacity-80 w-60"
-        src={props.image}
-        alt={`${props.title} Logo`}
-      />
+
+      <Link to={props.url} target="_blank" className="w-60 shrink-0">
+        <img
+          className="opacity-80"
+          src={props.image}
+          alt={`${props.title} Logo`}
+        />
+      </Link>
     </div>
   );
 };
