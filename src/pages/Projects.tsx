@@ -8,6 +8,14 @@ const Projects = () => {
       <p className="text-5xl text-center font-bold">Projects</p>
       <div className="flex flex-col gap-10">
         <ProjectItem
+          title="FlexCharts (WIP)"
+          description="Mobile app to track your gym workouts"
+          tags={["React Native", "Node.js", "MySQL", "AWS"]}
+          image={CodeImage}
+          link="https://github.com/skinner452/flexcharts"
+        />
+
+        <ProjectItem
           title="alecskinner.com"
           description="Personal website built with React and Tailwind CSS"
           tags={["React", "Typescript", "Tailwind CSS", "AWS"]}
