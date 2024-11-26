@@ -25,8 +25,8 @@ const ProjectItem = (props: Props) => {
               <p
                 key={tag}
                 className={`${
-                  TAG_COLORS[tag] ?? "bg-white"
-                } text-black px-2 py-1 rounded`}
+                  TAG_COLORS[tag] ?? "bg-black"
+                } text-white px-2 py-1 rounded`}
               >
                 {tag}
               </p>
