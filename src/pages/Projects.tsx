@@ -1,4 +1,4 @@
-import CodeImage from "../images/code.png";
+import GithubImage from "../images/github.png";
 
 import ProjectItem from "../components/ProjectItem";
 
@@ -8,18 +8,34 @@ const Projects = () => {
       <p className="text-5xl text-center font-bold">Projects</p>
       <div className="flex flex-col gap-10">
         <ProjectItem
-          title="FlexCharts (WIP)"
-          description="Mobile app to track your gym workouts"
-          tags={["React Native", "Node.js", "MySQL", "AWS"]}
-          image={CodeImage}
-          link="https://github.com/skinner452/flexcharts"
+          title="FlexCharts API (WIP)"
+          description="Simple REST API to handle database operations for FlexCharts"
+          tags={[
+            "Node.js",
+            "Express",
+            "Typescript",
+            "MySQL",
+            "Lambda",
+            "API Gateway",
+            "Cognito",
+          ]}
+          image={GithubImage}
+          link="https://github.com/skinner452/flex-charts-api"
+        />
+
+        <ProjectItem
+          title="FlexCharts Mobile (WIP)"
+          description="Mobile app to track and visualize workout data"
+          tags={["React Native", "Typescript", "Cognito"]}
+          image={GithubImage}
+          link="https://github.com/skinner452/flex-charts-mobile"
         />
 
         <ProjectItem
           title="alecskinner.com"
           description="Personal website built with React and Tailwind CSS"
-          tags={["React", "Typescript", "Tailwind CSS", "AWS"]}
-          image={CodeImage}
+          tags={["React", "Typescript", "Tailwind CSS", "Amplify"]}
+          image={GithubImage}
           link="https://github.com/skinner452/alecskinner"
         />
 
@@ -27,7 +43,7 @@ const Projects = () => {
           title="LastFM Stats for Tidbyt"
           description="App built for Tidbyt that displays a user's listening stats from LastFM"
           tags={["Starlark"]}
-          image={CodeImage}
+          image={GithubImage}
           link="https://github.com/skinner452/community/tree/main/apps/lastfmstats"
         />
       </div>

@@ -20,7 +20,7 @@ const ProjectItem = (props: Props) => {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center">
           <p className="text-xl font-bold">{props.title}</p>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap justify-center sm:justify-start gap-2">
             {props.tags.map((tag) => (
               <p
                 key={tag}
