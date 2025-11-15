@@ -8,7 +8,15 @@ const Projects = () => {
       <p className="text-5xl text-center font-bold">Projects</p>
       <div className="flex flex-col gap-10">
         <ProjectItem
-          title="FlexCharts API (WIP)"
+          title="Feathered Friends"
+          description="A active/idle game about attracting birds and collecting feathers"
+          tags={["React", "Typescript", "Tailwind CSS"]}
+          image={GithubImage}
+          link="https://github.com/skinner452/feathered-friends"
+        />
+        
+        <ProjectItem
+          title="FlexCharts API"
           description="Simple REST API to handle database operations for FlexCharts"
           tags={[
             "Node.js",
@@ -24,7 +32,7 @@ const Projects = () => {
         />
 
         <ProjectItem
-          title="FlexCharts Mobile (WIP)"
+          title="FlexCharts Mobile"
           description="Mobile app to track and visualize workout data"
           tags={["React Native", "Typescript", "Cognito"]}
           image={GithubImage}

@@ -1,6 +1,7 @@
 import UNLImage from "../images/unl.png";
 import AMPTImage from "../images/ampt.jpg";
 import ConnectRNImage from "../images/connectrn.png";
+import WowSeeImage from "../images/wowsee.jpg";
 import StatueOfLibertyImage from "../images/statue_of_liberty.jpg";
 import ReactImage from "../images/react.png";
 import GoImage from "../images/go.png";
@@ -31,13 +32,16 @@ const AboutMe = () => {
             In my next career move, I&apos;m looking for a role that allows me
             to combine my expertise in frameworks like React, React Native, Go,
             and SQL with opportunities to learn and explore new technologies.
-            I&apos;m seeking a remote or hybrid position in the New Jersey or
-            New York City area where I can collaborate with talented and driven
-            professionals. My goal is to contribute to building impactful,
-            innovative products while continuing to grow my skills and advance
-            my career.
+            I&apos;m seeking a remote position where I can collaborate with
+            talented and driven professionals. My goal is to contribute to
+            building impactful, innovative products while continuing to grow my
+            skills and advance my career.
           </p>
-          <img src={StatueOfLibertyImage} alt="Alec at the Statue of Liberty" />
+          <img
+            className="mx-auto"
+            src={StatueOfLibertyImage}
+            alt="Alec at the Statue of Liberty"
+          />
         </div>
       </div>
 
@@ -72,7 +76,8 @@ const AboutMe = () => {
       <div className="flex flex-col gap-10">
         <p className="text-5xl text-center font-bold">Timeline</p>
         <TimelineEntry
-          title="University of Nebraska - Lincoln"
+          company="University of Nebraska - Lincoln"
+          title="Bachelor of Science in Computer Science"
           startYear={2013}
           endYear={2017}
           description={
@@ -98,7 +103,8 @@ const AboutMe = () => {
         <hr />
 
         <TimelineEntry
-          title="AMPT"
+          company="AMPT"
+          title="Software Developer"
           startYear={2016}
           endYear={2022}
           description={
@@ -123,7 +129,8 @@ const AboutMe = () => {
         <hr />
 
         <TimelineEntry
-          title="connectRN"
+          company="connectRN"
+          title="Full Stack Engineer"
           startYear={2022}
           endYear={2024}
           description={
@@ -143,6 +150,32 @@ const AboutMe = () => {
           image={ConnectRNImage}
           color="#644DFF"
           url={"https://connectrn.com/"}
+        />
+
+        <hr />
+
+        <TimelineEntry
+          company="WowSee"
+          title="Full Stack Developer"
+          startYear={2025}
+          endYear={null}
+          description={
+            <p>
+              At WowSee, I’m currently working on a suite of
+              entertainment-focused products, including fantasy sports, web
+              comics, and HTML-based games. I’ve led efforts to modernize the
+              codebase, including rewriting a Django backend in Node/Express to
+              improve performance, maintainability, and test coverage. I also
+              designed a flexible framework for the sports platform that
+              significantly reduced code duplication and accelerated feature
+              development. My work spans building responsive front-end
+              experiences with React and supporting scalable, efficient backend
+              systems in a fast-paced startup environment.
+            </p>
+          }
+          image={WowSeeImage}
+          color="#4DBDA7"
+          url={"https://www.wowsee.me/"}
         />
       </div>
     </div>
